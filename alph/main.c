@@ -3,10 +3,11 @@
 
 
 int main(int args, char* argv[]) {
+    char* filename;
     int not_reverce;
     if (args == 2)
     {
-        char* filename = argv[1];
+        filename = argv[1];
         not_reverce = 1;
     }
     else if (args == 4)
@@ -26,7 +27,7 @@ int main(int args, char* argv[]) {
                 puts("Error args");
                 return 1;
             }
-            char* filename = argv[3];
+            filename = argv[3];
        }
        else if (!alph_check("-o", argv[2], 1))
        {
@@ -43,7 +44,7 @@ int main(int args, char* argv[]) {
                 puts("Error args");
                 return 1;
             }
-            char* filename = argv[1];
+            filename = argv[1];
        } 
        else
        {
@@ -57,7 +58,7 @@ int main(int args, char* argv[]) {
         return 1;
     }  
     Tree* tree = NULL;
-    FILE* file = fopen("file.txt", "r");
+    FILE* file = fopen(filename, "r");
     if (file == NULL)
     {
         puts("ERROR: file not read");
