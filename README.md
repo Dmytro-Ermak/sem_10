@@ -1,4 +1,4 @@
-1st:
+Первое задание:
 
 cd sem_10\alph
 
@@ -16,8 +16,10 @@ gcc .\main.c .\string.c .\tree.c -o 10
 
 .\10 n.txt
 
-
-2nd:
+Второе задание:
 
 cd sem_10\data_base
 
+gcc .\main.c .\strings.c .\struct_db.c -o 10
+
+.\10
